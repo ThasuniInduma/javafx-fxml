@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="rootNode" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.stockmanage102.controlller.DashboardFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="192.0" layoutY="26.0" prefHeight="18.0" prefWidth="215.0" text="Dashboard" textFill="#d74141">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="192.0" layoutY="90.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="42.0" prefWidth="107.0" style="-fx-background-color: yellow;" text="Customer">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/customer.png.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="349.0" layoutY="90.0" mnemonicParsing="false" onAction="#btnItemOnAction" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: pink;" text="Item">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/item.png.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="482.0" layoutY="90.0" mnemonicParsing="false" onAction="#btnSupplierOnAction" prefHeight="42.0" prefWidth="72.0" style="-fx-background-color: orange;" text="Supplier">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="54.0" layoutY="90.0" mnemonicParsing="false" onAction="#btnItemOnAction" prefHeight="42.0" prefWidth="79.0" style="-fx-background-color: gold;" text="Dashboard">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane fx:id="node" layoutX="54.0" layoutY="152.0" prefHeight="231.0" prefWidth="500.0" style="-fx-background-color: lightgray;">
+         <children>
+            <TableView layoutX="14.0" layoutY="16.0" prefHeight="200.0" prefWidth="472.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Date" />
+                <TableColumn prefWidth="75.0" text="Time" />
+                  <TableColumn prefWidth="320.0" text="Venue" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
